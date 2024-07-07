@@ -1,0 +1,30 @@
+footer {
+    background-color: #141414;
+    padding: 65px 0 35px 0;
+}
+
+.developed {
+    color: rgba(255, 255, 255, 0.767);
+}
+
+.quick-links {
+    border: 1px solid rgba(255, 255, 255, 0.725);
+    padding: 35px;
+    border-radius: 20px;
+    margin: 10px 0;
+
+}
+
+.quick-links h4 {
+    color: white;
+}
+
+.quick-links ul li a {
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.quick-links ul li svg {
+    color: white;
+}

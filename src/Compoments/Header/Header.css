@@ -1,0 +1,26 @@
+.logo img {
+    height: 65px;
+}
+
+header {
+    background-color: #013238;
+    padding: 12px 0;
+}
+
+nav ul a {
+    padding: 8px 15px;
+    color: white;
+    font-size: 17px;
+    
+}
+
+nav ul a:hover {
+    padding: 8px 15px;
+    color: #c1e6ba;
+}
+
+nav ul a.active {
+    color: #c1e6ba;
+    
+    
+}

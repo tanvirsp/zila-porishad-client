@@ -1,0 +1,20 @@
+
+
+.lg-react-element {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    gap: 15px;
+
+}
+
+.lg-react-element a {
+    position: relative;
+}
+
+
+
+
+.lg-react-element a img {
+    width: 100%;
+}
+

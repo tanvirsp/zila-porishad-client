@@ -1,0 +1,15 @@
+.notice-bg {
+    background-color: #eaf8e7;
+    padding: 35px;
+    border-radius: 20px;
+    height: 427px;
+    margin-bottom: 25px;
+    
+}
+
+.notice-links li a {
+    color: #262626;
+    padding: 8px  0;
+    display: inline-block;
+    line-height: 20px;
+}
