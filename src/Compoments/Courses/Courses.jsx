@@ -37,7 +37,7 @@ const Courses = () => {
                 <div className="col-md-3">
                     <div onClick={()=>navigate(`/registration`)} className='course-item'>
                         <img src={courseFour} alt="Spoken" />
-                        <h4 className='mt-3'>দর্জি প্রশিক্ষণ <br /> কোর্স </h4>
+                        <h4 className='mt-3'>সেলাই প্রশিক্ষণ <br /> কোর্স </h4>
                         <small className='course-tag'>৬০ দিন ব্যাপী</small>
                     </div>
                 </div>

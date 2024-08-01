@@ -3,14 +3,17 @@
 
 
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0 ;
+  margin: 0 ;
   box-sizing: border-box;
   font-family: "Noto Sans Bengali", "Hind Siliguri", sans-serif;
 
 }
 
-
+body {
+  padding: 0;
+  margin: 0;
+}
 
 a {
   text-decoration: none !important;
@@ -27,6 +30,8 @@ ul {
 h1,h2,h3,h4,h5,h6 {
   font-weight: 600 ;
   font-family:  "Hind Siliguri", sans-serif;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 h1 {
@@ -48,6 +53,7 @@ h4 {
 
 h5 {
   font-size: 23.04px !important ;
+ 
 }
 
 
@@ -57,7 +63,9 @@ h6 {
 
 p {
   font-size: 16px;
-  color: #262626
+  color: #262626;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 small {
@@ -78,8 +86,69 @@ small {
   font-weight: 600;
 }
 
+.button-one:disabled {
+  background-color: #8cbb9e;
+}
+
 .section-title {
   font-size: 35px;
   font-weight: 700;
   color: #013238;
+}
+
+.page-title {
+  background-color: #4ea771;
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+table {
+  font-size: 17px;
+}
+
+.verify-section {
+  padding: 100px 0;
+}
+
+
+
+/* modal css */
+
+.modal-header {
+  display: block !important;
+  text-align: center;
+}
+
+.modal-header button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 22px;
+}
+
+
+
+/* .modal-body table, th, tr, td {
+  border: 1px solid gray
+} */
+
+
+.group-title {
+  margin-bottom: 12px !important ;
+  display: inline-block;
+  color: #4EA771;
+  
+}
+
+/* confirmation page */
+.confirmation-message {
+  max-width: 700px;
+  margin: 75px  auto;
+  background-color: #f7f7f7;
+  padding: 45px;
+  border-radius: 20px;
+  text-align: center;
 }

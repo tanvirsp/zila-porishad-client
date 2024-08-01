@@ -2,14 +2,16 @@
 import { Outlet } from 'react-router-dom';
 import Header from '../Compoments/Header/Header';
 import Footer from '../Compoments/Footer/Footer';
+import { Toaster } from 'react-hot-toast';
 
 
 const MainLayout = () => {
     return (
         <>
             <Header></Header>
-                <div className='p-3'>
+                <div>
                     <Outlet />
+                    <Toaster  position="top-center"  reverseOrder={false}/>
                 </div>
             <Footer />
         </>

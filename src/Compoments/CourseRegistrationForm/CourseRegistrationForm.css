@@ -1,0 +1,53 @@
+.form-title {
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+    
+}
+
+.box {
+
+}
+
+.small-logo{
+    width: 100px;
+}
+
+.mujibor {
+    width: 130px;
+}
+
+.box h5{
+    margin: 40px 0 20px 0;
+    font-weight: 700;
+
+}
+
+
+.nameFieldLabel {
+    margin-top: 86px
+}
+
+
+.form-group {
+    background-color: #f7f7f7;
+    padding: 35px;
+    border-radius: 15px;
+    margin: 10px 0;
+    border: 1px solid lightgray;
+    position: relative;
+}
+
+.form-group-title h5 {
+    color: #013238;
+    font-weight: 700;
+    margin-bottom: 10px
+
+}
+
+.require-mark {
+    color: red
+}

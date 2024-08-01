@@ -8,14 +8,14 @@ import Slider from "../Compoments/Slider/Slider";
 
 const Home = () => {
     return (
-        <div className="container">
+        <div className="container  mt-4">
             <div className="row">
                 <div className="col-md-9">
                     <Slider />
                     <AboutUs />
                 </div>
                 <div className="col-md-3">
-                    <NoticeBoard />
+                    {/* <NoticeBoard /> */}
                     <PersonOne />
 
                 </div>
