@@ -1,7 +1,16 @@
 .person-bg{
-    background-color: #eaf8e7;
+    background-color: white;
     padding: 35px;
     border-radius: 20px;
     margin-bottom: 25px;
     
+}
+
+.person-bg img {
+    width: 220px;
+    border-radius: 10px;
+}
+
+.person-bg small {
+    display: block;
 }

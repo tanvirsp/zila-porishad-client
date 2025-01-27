@@ -78,35 +78,55 @@
   
 
 .slider-info {
-  width: 500px;
+  max-width: 100%;
   position: absolute;
-  top: 50%;
-  padding: 75px;
-  transform: translateY(-50%);
-  text-align: left;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  text-align: center;
   color: white;
+  background-color: #121312ae;
 }
 
 .slider-info h2 {
-  font-size: 60px;
-  line-height: 50px;
-  margin: 0
+  font-size: 25px !important;
+  line-height: 42px;
+  padding: 15px !important;
+  font-weight: 400;
+  
 }
 
-.slider-info p {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 300;
-  margin: 35px 0;
-} 
+ 
 
-.slider-overlay {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.069));
-  position: absolute;
-  top:0;
-  left: 0;
+
+
+@media (max-width: 575.98px) {
+  .slider-info h2 {
+    font-size: 18px !important;
+    line-height: 25px;
+    padding: 10px !important;
+   
+  }
+  
 }
 
+
+@media (max-width: 767.98px) {
+  
+}
+
+
+@media (max-width: 991.98px) {
+  
+ }
+
+
+@media (max-width: 1199.98px) {
+  
+ }
+
+
+@media (max-width: 1399.98px) {
+  
+ }

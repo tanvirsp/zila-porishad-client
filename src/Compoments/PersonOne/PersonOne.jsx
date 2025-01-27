@@ -1,25 +1,55 @@
 import './PersonOne.css'
-import person  from '../../assets/person-1.jpg'
-import personTwo  from '../../assets/person-2.jpg'
+import HomePageStore from '../../Store/HomePageStore';
+import { useEffect } from 'react';
 
 const PersonOne = () => {
+
+    const {PersonList,  PersonListRequest } = HomePageStore();
+
+
+    useEffect( ()=>{
+        (async()=>{
+            PersonList === null &&  PersonListRequest()
+        })()
+    } ,[])
+
     return (
         <aside  >
-            <div className='person-bg text-center' >
-                <img width="155px" src={personTwo} alt="Person" />
-                <h5 className='mt-3'>জনাব মুহাম্মদ বাকী বিল্লাহ্</h5>
-                <p>চেয়ারম্যান <br />  জেলা পরিষদ, জামালপুর</p>
-                <p></p>
-                <small>মোবাইল নং : ০১৭১১-৬৮৩২৫২<br />
-                    ফোন : ০৯৮১-৬২৭২২ <br />
-                    ই-মেইল : zpjamalpur@lgd.gov.bd
-                    
-                </small>
-            </div>
+            {
+                PersonList === null ? "Loading" :
+                PersonList.length ===0 ? "No Person found":
+                PersonList.map( (item, index) =>{
+                    return (
+                        <div key={index} className='person-bg text-center'>
+                            <img src={`${import.meta.env.VITE_URL}/${item?.image}`} alt="Person" />
+                            <h6 className='my-3'>{item?.name}</h6>
+                            <p>{item.designation} </p>
+                            {item?.mobile && <small>মোবাইল নং: {item.mobile}</small> }
+                            {item?.phone && <small> ফোন (অফিস): {item.phone}</small>}
+                            {item?.email&& <small>  ই-মেইল: {item.email}</small>}
+                            {item?.batch && <small> ব্যাচ (বিসিএস) : {item.batch}</small>}
+                            {item?.joiningDate && <small> বর্তমান কর্মস্থলে যোগদানের তারিখ : {item.joiningDate}</small>}
+                            
+                           
+                            
+                            
+                            
+{/* 
+                            <small>মোবাইল নং : {item.mobile} <br />
+                                ফোন (অফিস) : {item.phone} <br />
+                                ই-মেইল : {item.email} <br />
+                                ব্যাচ (বিসিএস) : {item.batch} <br />
+                                বর্তমান কর্মস্থলে যোগদানের তারিখ : {item.joiningDate}
+                            </small> */}
+                        </div>
+                    )
+                }) 
+            }
+            
 
-            <div className='person-bg text-center'>
+            {/* <div className='person-bg text-center'>
                 <img src={person} alt="Person" />
-                <h5 className='mt-3'>জনাব মুন মুন জাহান লিজা</h5>
+                <h6 className='my-3'>জনাব মুন মুন জাহান লিজা</h6>
                 <p>প্রধান নির্বাহী কর্মকর্তা (ভারপ্রাপ্ত) </p>
                 <small>মোবাইল নং : ০১৭০৪৫০৬৪৩৩ <br />
                     ফোন (অফিস) : ০৯৮১-৬২৭১৬ <br />
@@ -27,7 +57,7 @@ const PersonOne = () => {
                     ব্যাচ (বিসিএস) : ৩৩ <br />
                     বর্তমান কর্মস্থলে যোগদানের তারিখ : ২০ মার্চ ২০২৩
                 </small>
-            </div>
+            </div> */}
             
         </aside>
     );

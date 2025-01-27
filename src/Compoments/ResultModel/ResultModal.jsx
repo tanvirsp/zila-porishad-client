@@ -1,6 +1,7 @@
-import { Modal, Spinner, Table } from "react-bootstrap";
+import { Modal, Table } from "react-bootstrap";
 import ResultStore from "../../Store/ResultStore";
 import logo from '../../assets/logo-black.png';
+import FullScreenLoader from "../../Layout/FullScreenLoader";
 
 
 const ResultModal = (props) => {
@@ -8,9 +9,10 @@ const ResultModal = (props) => {
     const {LoadingSpinner, ResultData} = ResultStore();
 
   if(LoadingSpinner){
-    return <Spinner animation="border" variant="success" />
+    return <FullScreenLoader />
   }
 
+  console.log(ResultData);
 
     return (
         <Modal
@@ -30,31 +32,27 @@ const ResultModal = (props) => {
                         <tbody>
                             <tr>
                                 <td className="text-end">শিক্ষার্থীর নাম :  </td>
-                                <td className="ps-3">{ResultData?.sutdentName}</td>
+                                <td className="ps-3">{ResultData?.studentDetails?.name}</td>
                             </tr>
                             <tr>
                                 <td className="text-end" >পিতার নাম :  </td>
-                                <td className="ps-3">{ResultData?.fatherName}</td>
+                                <td className="ps-3">{ResultData?.studentDetails?.fatherName}</td>
+                            </tr>
+                            <tr>
+                                <td className="text-end" >মাতার নাম :  </td>
+                                <td className="ps-3">{ResultData?.studentDetails?.motherName}</td>
                             </tr>
                             <tr>
                                 <td className="text-end">কোর্সের বিষয় :  </td>
-                                <td className="ps-3">{ResultData?.course}</td>
-                            </tr>
-                            <tr>
-                                <td className="text-end" >কোর্সের সময় :  </td>
-                                <td className="ps-3">{ResultData?.duration} </td>
+                                <td className="ps-3">{ResultData?.courseDetails?.name}</td>
                             </tr>
                             <tr>
                                 <td className="text-end">কোর্স সেশন :  </td>
-                                <td className="ps-3">{ResultData?.session} </td>
+                                <td className="ps-3">{ResultData?.sessionsDetails?.session} </td>
                             </tr>
                             <tr>
                                 <td className="text-end">প্রাপ্ত গ্রেড :  </td>
-                                <td className="ps-3">{ResultData?.result} </td>
-                            </tr>
-                            <tr>
-                                <td className="text-end">সার্টিফিকেট :  </td>
-                                <td className="ps-3"><a target="_blank"  rel="noreferrer" href={`http://zp.jamalpurit.com/${ResultData?.certificate}`} >Click To View Certificate</a> </td>
+                                <td className="ps-3">{ResultData?.mark} </td>
                             </tr>
                         </tbody>
 

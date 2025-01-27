@@ -1,36 +1,33 @@
 import AboutUs from "../Compoments/AboutUs/AboutUs";
 import Courses from "../Compoments/Courses/Courses";
 import Gallery from "../Compoments/Gallery/Gallery";
-import NoticeBoard from "../Compoments/NoticeBoard/NoticeBoard";
+import NoticeBoard from "../Compoments/Notice/NoticeBoard";
+
 import PersonOne from "../Compoments/PersonOne/PersonOne";
 import Slider from "../Compoments/Slider/Slider";
 
 
+
 const Home = () => {
+
+ 
     return (
         <div className="container  mt-4">
             <div className="row">
                 <div className="col-md-9">
                     <Slider />
                     <AboutUs />
+                    <Courses />
+                    <Gallery />
                 </div>
                 <div className="col-md-3">
-                    {/* <NoticeBoard /> */}
+                    <NoticeBoard />
                     <PersonOne />
+                    
 
                 </div>
             </div>
             
-            <div className="row">
-                <div className="col-12">
-                    <Courses />
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-12">
-                    <Gallery />
-                </div>
-            </div>
            
               
             

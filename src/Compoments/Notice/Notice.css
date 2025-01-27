@@ -1,0 +1,23 @@
+
+
+.notice-links li {
+    color: black;
+    padding: 8px  0;
+    display: inline-block;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.notice-links li:hover {
+    color: #4EA771
+}
+
+
+.notice-links li::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0.2);
+    display: block;
+}
+

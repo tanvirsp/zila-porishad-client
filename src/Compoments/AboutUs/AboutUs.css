@@ -1,12 +1,13 @@
 .about-section {
     padding: 35px;
-    background-color: #ebf7e9;
+    background-color: white;
     margin: 25px 0;
     border-radius: 20px;
 }
 
 .video-thumbnail  {
     position: relative;
+    
 }
 
 
@@ -20,4 +21,14 @@
     top:0px;
     left: 125px;
     width: 35% !important;
+}
+
+.about-section tbody, .about-section td {
+    border-bottom: 1px solid lightgray
+
+}
+
+.about-section td {
+    padding: 3px
+
 }

@@ -13,6 +13,7 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: #F9F9FA;
 }
 
 a {
@@ -109,9 +110,6 @@ table {
   font-size: 17px;
 }
 
-.verify-section {
-  padding: 100px 0;
-}
 
 
 

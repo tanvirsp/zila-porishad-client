@@ -1,24 +1,9 @@
-.form-title {
-    /* text-align: center; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 
-    
-    
-}
-
-.box {
-
-}
 
 .small-logo{
     width: 100px;
 }
 
-.mujibor {
-    width: 130px;
-}
 
 .box h5{
     margin: 40px 0 20px 0;

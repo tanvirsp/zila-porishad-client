@@ -2,6 +2,24 @@ import { Table } from "react-bootstrap";
 
 
 const ResultPage = () => {
+
+const maxSize = 1 * 1024 * 1024;
+//Uploading Image to server
+const handleImage = async(e) =>{
+    e.preventDefault();
+    const curreSize = e.target.files[0].size
+   if(curreSize >= maxSize ){
+    alert ("size is Too big")
+   }else {
+    alert ("Perfect")
+   }
+
+    
+    
+};
+
+
+
     return (
         <section>
             <div className="container">
@@ -43,6 +61,8 @@ const ResultPage = () => {
 
              
             </div>
+
+            <input onChange={handleImage} name='profileImg' type="file" className='form-control'  />
             
         </section>
     );

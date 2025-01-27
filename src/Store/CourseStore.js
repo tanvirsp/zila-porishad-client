@@ -16,6 +16,15 @@ const CourseStore = create( (set) =>({
         }
     },
 
+    ActiveCourseSession: null,
+    ActiveCourseSessionRequest: async() =>{
+        set({ActiveCourseSession: null, CourseLoading: true  })
+        const res = await axios.get(`${import.meta.env.VITE_URL}/api/v1/active-course-session`);
+        if(res.data.status === "success"){
+            set({ActiveCourseSession: res.data.data, CourseLoading: false })
+        }
+    },
+
    
 
 

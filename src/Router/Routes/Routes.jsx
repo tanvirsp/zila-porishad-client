@@ -2,16 +2,15 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "../../Pages/Home";
 import MainLayout from "../../Layout/MainLayout";
 import RegistrationPage from "../../Pages/RegistrationPage";
-import CoursePage from "../../Pages/CoursePage";
-import AboutPage from "../../Pages/AboutPage";
 import ContactPage from "../../Pages/ContactPage";
 import ResultPage from "../../Pages/ResultPage";
 import VerifyResult from "../../Pages/VerifyResult";
 import CourseRegistrationPage from "../../Pages/CourseRegistrationPage";
 import ScholarshipRegistrationPage from "../../Pages/ScholarshipRegistrationPage";
-import FormPreviewPage from "../../Pages/FormPreviewPage";
-import ConfirmPage from "../../Pages/ThankYouPage";
 import ThankYouPage from "../../Pages/ThankYouPage";
+import NoticePage from "../../Pages/NoticePage";
+import NoticeDetailsPage from "../../Pages/NoticeDetailsPage";
+
 
 
 const router = createBrowserRouter([
@@ -28,14 +27,6 @@ const router = createBrowserRouter([
                 element: <RegistrationPage />
             },
             {
-                path: "/courses",
-                element: <CoursePage />
-            },
-            {
-                path: "/about",
-                element: <AboutPage />
-            },
-            {
                 path: "/contact",
                 element: <ContactPage />
             },
@@ -50,18 +41,23 @@ const router = createBrowserRouter([
             {
                 path: "/course-registration",
                 element: <CourseRegistrationPage />
+                
             },
             {
                 path: "/scholarship-registration",
                 element: <ScholarshipRegistrationPage />
             },
             {
-                path: "/form-preview-page",
-                element: <FormPreviewPage />
+                path: "/thankyou/:id/:value",
+                element: <ThankYouPage />
             },
             {
-                path: "/thankyou",
-                element: <ThankYouPage />
+                path: "/notice",
+                element: <NoticePage />
+            },
+            {
+                path: "/notice-details/:id",
+                element: <NoticeDetailsPage />
             },
 
         ]

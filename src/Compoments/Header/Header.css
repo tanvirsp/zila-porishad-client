@@ -7,20 +7,178 @@ header {
     padding: 12px 0;
 }
 
-nav ul a {
+.navbar {
+    display: flex;
+}
+
+nav .navbar li a {
     padding: 8px 15px;
     color: white;
     font-size: 17px;
     
 }
 
-nav ul a:hover {
+nav .navbar li a:hover {
     padding: 8px 15px;
     color: #c1e6ba;
 }
 
-nav ul a.active {
+nav .navbar li a.active {
     color: #c1e6ba;
     
     
 }
+
+
+.bar svg {
+    color: white;
+    font-size: 24px;
+    display: none;
+}
+
+
+
+
+/* ************************ */
+/* Mobile Menu code */
+/* ************************ */
+
+.mobile-menu-open{
+    background-color: #013238;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    transition: right 400ms;
+    z-index: 9999;
+
+}
+
+.mobile-menu-close{
+    background-color: #013238;
+    position: fixed;
+    top: 0px;
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    transition: right 400ms ;
+    z-index: 9999;
+
+}
+
+.close-icon svg  {
+    color: white;
+    font-size: 40px; position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+
+
+.close-icon svg:hover {
+    color: #c1e6ba
+}
+
+
+.mobile-menu-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 100%
+    
+}
+
+.mobile-menu-navbar li a {
+    padding: 8px ;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    display: block;
+}
+
+
+
+.mobile-menu-navbar li a.active {
+    color: #c1e6ba;
+    
+    
+}
+
+
+
+
+/* 
+
+.offcanvas {
+    background-color: #013238;
+}
+
+
+.offcanvas-navbar {
+    padding: 25px !important;
+    text-align: center;
+}
+
+
+.offcanvas-navbar li a {
+    padding: 5px ;
+    display: inline-block;
+    color: white;
+    font-size: 21px;
+    
+}
+
+.offcanvas-navbar li a:hover {
+    padding: 5px ;
+    color: #c1e6ba;
+}
+
+.offcanvas-navbar li a.active {
+    color: #c1e6ba;
+    
+}
+
+.offcanvas-navbar li a.active {
+    color: #c1e6ba;
+    
+}
+ */
+
+
+
+
+
+ /* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+   
+    .logo img {
+        height: 60px;
+    }
+
+
+
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {  }
+    
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .bar svg {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+ }
+
+
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { }

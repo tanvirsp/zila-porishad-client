@@ -1,10 +1,12 @@
+import ScholarshipRegistrationForm from "../Compoments/ScholarshipRegistrationForm/ScholarshipRegistrationForm";
 
 
 const ScholarshipRegistrationPage = () => {
     return (
-        <div>
+        <>
+        <ScholarshipRegistrationForm />
             
-        </div>
+        </>
     );
 };
 
